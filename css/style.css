@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton+SC&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 5000px;
+}
+.label {
+    transform: translateY(-50%);
+    left: 15px;
+    background-color: white;
+    padding: 0 4px;
+    transition: 0.3s ease;
+    cursor: text;
+}
+.input-content input {
+    height: 50px;
+    border-color: rgb(190, 190, 190) !important;
+}
+.title , .welcome , .card-h2 , .translate-span ,
+.img-title {
+    background: linear-gradient(to bottom, rgb(0, 174, 255), rgb(71, 135, 255), rgb(9, 54, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.input-content input:focus ~ .label {
+    top: 0 !important;
+    left: 10px !important;
+    font-size: 13px !important;
+    color: rgb(0, 110, 255);
+}
+.aside {
+    transform: translateY(-50%);
+    right: 50px !important;
+}
+.aside i {
+    transition:0.3s ease;
+}
+.aside i:hover {
+    color: rgb(0, 60, 255) !important;
+    opacity: 1 !important;
+    transform: scale(1.1);
+}
+.carousel-caption h2 {
+    font-family: "Acme", serif;
+}
+.arrow {
+    transition: 0.5s ease;
+}
+.card-header[aria-expanded="true"] .arrow {
+    transform: rotate(-180deg);
+}
+.img-fixed {
+    background: url(../images/image_fx_\ \(12\).jpg) no-repeat fixed top / cover;
+    height: 400px !important;
+}
