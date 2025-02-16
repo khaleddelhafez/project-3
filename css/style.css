@@ -12,6 +12,9 @@ body {
     transition: 0.3s ease;
     cursor: text;
 }
+.position-right {
+    object-position: right;
+}
 .input-content input {
     height: 50px;
     border-color: rgb(190, 190, 190) !important;
@@ -35,7 +38,14 @@ body {
 @media (max-width : 567px) {
     .aside {
         right: 30px !important; 
-    }}
+    }
+    .cards .card img{
+        height: 370px !important;
+    }
+    .cards .card {
+        height: 500px !important;
+    }
+}
 .aside i {
     transition:0.3s ease;
 }
@@ -64,6 +74,9 @@ body {
     width: 480px !important;
     height: 600px;
     position: relative !important;
+}
+.card img {
+    max-height: 450px;
 }
 .after {
     width: 0%;
