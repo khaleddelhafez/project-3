@@ -19,11 +19,11 @@ body {
     height: 50px;
     border-color: rgb(190, 190, 190) !important;
 }
-.title , .welcome , .card-h2 , .translate-span ,
+.title , .welcome , .card-h2 , .translate-span , .FH,
 .img-title , .podcast-title , .card-title , .collapse-title {
     background: linear-gradient(to bottom, rgb(0, 174, 255), rgb(71, 135, 255), rgb(9, 54, 255));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 .input-content input:focus ~ .label {
     top: 0 !important;
@@ -43,10 +43,14 @@ body {
         height: 370px !important;
     }
     .cards .card {
-        height: 510px !important;
+        min-height: 500px !important;
+        max-height: 550px !important;
     }
     .thanks-body {
         transform: translateY(-30px);
+    }
+    .img-fixed {
+        height: 300px !important;
     }
 }
 .aside i {
@@ -68,7 +72,7 @@ body {
 }
 .img-fixed {
     background: url(../images/image_fx_\ \(12\).jpg) no-repeat fixed top / cover;
-    height: 400px !important;
+    height: 400px;
 }
 .fixed2 {
     background-image: url(../images/image_fx_\ \(3\).jpg);
@@ -114,9 +118,12 @@ body {
 .thanks > div:hover .thanks-h {
     margin-top: 40px;
 }
-.podcast-container {
-    max-width: 80%;
+.podcast-container , .FH {
+    /* max-width: 80%; */
     background: linear-gradient(to right , rgb(191, 219, 255), rgb(215, 231, 255), rgb(239, 246, 255));
+}
+.sec-podcast {
+    background: linear-gradient(to left , rgb(191, 219, 255), rgb(215, 231, 255), rgb(214, 231, 255));
 }
 @media (min-width : 776px) {
     .podcast-img {
@@ -161,4 +168,8 @@ body {
 .join-us {
     height: 300px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.join-us:hover {
+    transform: scale(0.9);
 }
