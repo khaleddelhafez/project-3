@@ -43,7 +43,8 @@ body {
         height: 370px !important;
     }
     .cards .card {
-        height: 500px !important;
+        min-height: 500px !important;
+        max-height: 550px !important;
     }
     .thanks-body {
         transform: translateY(-30px);
