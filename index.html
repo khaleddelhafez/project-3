@@ -31,14 +31,14 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trips</a>
               <ul class="dropdown-menu fs-5 bg-opacity-75">
-                <li><a href="#" class="dropdown-item text-primary">Egypt</a></li>
-                <li><a href="#" class="dropdown-item text-primary">Iraq</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">Egypt</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">Iraq</a></li>
                 <hr>
-                <li><a href="#" class="dropdown-item text-primary">London</a></li>
-                <li><a href="#" class="dropdown-item text-primary">California</a></li>
-                <li><a href="#" class="dropdown-item text-primary">Dubai</a></li>
-                <li><a href="#" class="dropdown-item text-primary">Tokyo</a></li>
-                <li><a href="#" class="dropdown-item text-primary">more</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">London</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">California</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">Dubai</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">Tokyo</a></li>
+                <li><a href="#" class="dropdown-item text-primary text-opacity-75">More</a></li>
               </ul> <!-- dropdown-menu -->
             </li> <!-- dropdown -->
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -205,27 +205,33 @@
     <div class="text-center bg-primary bg-opacity-25 py-3 rounded-top-4 shadow-lg">
       <h2 class="display-4 fw-medium ">Translate from <span class="translate-span">Arabic</span> to <span class="translate-span">English</span></h2>
       </div>
-      <div class="py-4 py-md-5 px-3 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
+      <div class="py-4 py-md-5 px-2 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
         <h2>Write and Translate <a href="#" class="text-primary text-opacity-75 text-decoration-none">Press Here</a></h2>
-        <button class="btn btn-primary mt-1 px-3 py-2 fs-4 copybtn" >Copy</button>
+          <button type="button" class="btn btn-primary mt-1 px-3 py-2 fs-5 copybtn position-relative">Copy</button>
+          <div class="position-absolute   copytitle rounded-end-3 rounded-bottom-3 text-center "><p class="fs-5 text-light">Copy to clipboard</p></div>
+          <div class="position-absolute copiedtitle rounded-end-3 rounded-bottom-3 text-center  "><p class="fs-5 text-light">Copied</p></div>
         <textarea type="text" width="500px" height="300px" class="fs-5 w-100 px-3 form-control shadow mt-4" placeholder="translate" style="height: 200px;"></textarea>
       </div>
       <!-- //////////////////////////////// --> <hr>
       <div class="text-center bg-primary bg-opacity-25 py-3 rounded-top-4 shadow-lg">
-        <h2 class="display-4 fw-medium ">Translate from <span class="translate-span">Arabic</span> to <span class="translate-span">Frensh</span></h2>
+        <h2 class="display-4 fw-medium ">Translate from <span class="translate-span">Arabic</span> to <span class="translate-span">French</span></h2>
         </div>
-        <div class="py-4 py-md-5 px-3 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
+        <div class="py-4 py-md-5 px-2 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
           <h2>Write and Translate <a href="#" class="text-primary text-opacity-75 text-decoration-none">Press Here</a></h2>
-          <button class="btn btn-primary mt-1 px-3 py-2 fs-4 copybtn" >Copy</button>
+          <button class="btn btn-primary mt-1 px-3 py-2 fs-5 copybtn" >Copy</button>
+          <div class="position-absolute   copytitle rounded-end-3 rounded-bottom-3 text-center "><p class="fs-5 text-light">Copy to clipboard</p></div>
+          <div class="position-absolute copiedtitle rounded-end-3 rounded-bottom-3 text-center  "><p class="fs-5 text-light">Copied</p></div>
           <textarea type="text" width="500px" height="300px" class="fs-5 w-100 px-3 form-control shadow mt-4" placeholder="translate" style="height: 200px;"></textarea>
         </div>
         <!-- ////////////////////////////// --> <hr>
         <div class="text-center bg-primary bg-opacity-25 py-3 rounded-top-4 shadow-lg">
           <h2 class="display-4 fw-medium ">Translate from <span class="translate-span">Arabic</span> to <span class="translate-span">German</span></h2>
           </div>
-          <div class="py-4 py-md-5 px-3 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
+          <div class="py-4 py-md-5 px-2 px-md-5 bg-secondary bg-opacity-25 rounded-bottom-4">
             <h2>Write and Translate <a href="#" class="text-primary text-opacity-75 text-decoration-none">Press Here</a></h2>
-            <button class="btn btn-primary mt-1 px-3 py-2 fs-4 copybtn" >Copy</button>
+            <button class="btn btn-primary mt-1 px-3 py-2 fs-5 copybtn" >Copy</button>
+            <div class="position-absolute copytitle rounded-end-3 rounded-bottom-3 text-center "><p class="fs-5 text-light">Copy to clipboard</p></div>
+            <div class="position-absolute copiedtitle rounded-end-3 rounded-bottom-3 text-center  "><p class="fs-5 text-light">Copied</p></div>
             <textarea type="text" width="500px" height="300px" class="fs-5 w-100 px-3 form-control shadow mt-4" placeholder="translate" style="height: 200px;"></textarea>
           </div>
   </section>
@@ -342,7 +348,7 @@
             </div>
             <div class="bottom-0 start-0 w-100 h-25 px-4 position-absolute text-light text-opacity-75 mb-5 ms-md-4 thanks-body" style="margin-bottom: 85px !important;">
               <img draggable="false" src="images/image_fx_ (15).jpg" alt="person" width="110px" height="125px" class="object-fit-cover rounded-circle d-block mb-2 shadow-lg border border-3 border-light border-opacity-50 ">
-              <h4 class="fs-3">khaled</h4>
+              <h4 class="fs-3">Michael</h4>
               <p class="fs-5 fw-medium">web developer</p>
             </div>
           </div>
@@ -358,7 +364,7 @@
             </div>
             <div class="bottom-0 start-0 w-100 h-25 px-4  position-absolute text-light text-opacity-75 ms-md-4 thanks-body" style="margin-bottom: 85px !important;">
               <img draggable="false" src="images/image_fx_ (16).jpg" alt="person"  width="110px" height="125px" class=" object-fit-cover rounded-circle d-block mb-2 shadow-lg border border-3 border-light border-opacity-50 ">
-              <h4 class="fs-3">khaled</h4>
+              <h4 class="fs-3">Emily</h4>
               <p class="fs-5 fw-medium">web developer</p>
             </div>
           </div>
@@ -374,7 +380,7 @@
             </div>
             <div class="bottom-0 start-0 w-100 h-25 px-4  position-absolute text-light text-opacity-75 ms-md-4 thanks-body" style="margin-bottom: 85px !important;">
               <img draggable="false" src="images/image_fx_ (31).jpg" alt="person"  width="110px" height="125px" class=" object-fit-cover rounded-circle d-block mb-2 shadow-lg border border-3 border-light border-opacity-50 ">
-              <h4 class="fs-3">khaled</h4>
+              <h4 class="fs-3">James</h4>
               <p class="fs-5 fw-medium">web developer</p>
             </div>
           </div>

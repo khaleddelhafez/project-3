@@ -19,8 +19,7 @@ body {
     height: 50px;
     border-color: rgb(190, 190, 190) !important;
 }
-.title , .welcome , .card-h2 , .translate-span , .FH,
-.img-title , .podcast-title , .card-title , .collapse-title {
+.title , .welcome , .card-h2 , .translate-span , .FH, .img-title , .podcast-title , .card-title , .collapse-title {
     background: linear-gradient(to bottom, rgb(0, 174, 255), rgb(71, 135, 255), rgb(9, 54, 255));
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -69,12 +68,30 @@ body {
 .card-header[aria-expanded="true"] .arrow {
     transform: rotate(-180deg);
 }
+.copytitle , .copiedtitle {
+    transform: translatex(80px);
+    background-color: rgba(53, 70, 88, 0.89);
+    width: 100px;
+    height: 60px;
+    transition: 0.2s;
+    opacity: 0;
+}
+.copiedtitle {
+    height: 30px;
+}
+.copybtn:hover + .copytitle,
+.copybtn:focus ~ .copiedtitle {
+    opacity: 1 ;
+}
+.copybtn:focus + .copytitle {
+    display: none;
+}
 .img-fixed {
     background: url(../images/image_fx_\ \(12\).jpg) no-repeat fixed top / cover;
     height: 400px;
 }
 .fixed2 {
-    background-image: url(../images/image_fx_\ \(3\).jpg);
+    background-image: url(../images/image_fx_\ \(35\).jpg);
 }
 .cards .card {
     width: 480px !important;
@@ -118,7 +135,6 @@ body {
     margin-top: 40px;
 }
 .podcast-container , .FH {
-    /* max-width: 80%; */
     background: linear-gradient(to right , rgb(191, 219, 255), rgb(215, 231, 255), rgb(239, 246, 255));
 }
 .sec-podcast {
